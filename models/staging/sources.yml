@@ -10,6 +10,7 @@ sources:
       - name: suppliers 
       - name: customers 
       - name: employees
+      - name: data
       - name: orders
         description: Uma linha por pedido. Inclui pedidos cancelados e deletados.
         columns:
