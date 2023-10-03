@@ -14,6 +14,11 @@ with
         from {{ ref('int_vendas__pedido_itens') }}
     )
 
+    , dim_tempo as (
+        select *
+        from {{ ref('stg_erp__data') }}
+    )
+
     , join_tabelas as (
         select
             pedidos.sk_pedido_item
@@ -45,6 +50,9 @@ with
             pedidos.id_produto = dim_produtos.id_produto
         left join dim_clientes on
             pedidos.id_cliente = dim_clientes.id_cliente
+        left join dim_tempo on
+            pedidos.data_do_pedido = dim_tempo.data    
+            
     )
 
     , transformacoes as (
