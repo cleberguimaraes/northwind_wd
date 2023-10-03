@@ -9,7 +9,11 @@ with
             ,data
             ,ano
             ,mes_num
+            ,dia_mes_num
+            ,semana
+            ,dia_semana_num
             ,mes_ano
+            ,mes_dia_desc
             ,mes
             ,dia_semana
         from stg_data
