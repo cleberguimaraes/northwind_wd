@@ -2,6 +2,8 @@ Welcome to your new dbt project!
 
 ### Using the starter project
 
+Este projeto é um projeto exemplo de conceitos do dbt usando os dados da Northwind.
+
 Try running the following commands:
 - dbt run
 - dbt test
