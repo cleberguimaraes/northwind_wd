@@ -23,6 +23,11 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
+# Variáveis
+
+vars:
+  start_date: '1995-01-01'
+  end_date: '2022-12-31'
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
@@ -39,6 +44,10 @@ models:
     marts:
       +materialized: table
       +schema: marts
+      
+    dim_tempo:  
+      +materialized: table
+      +schema: northwind-projeto-dw-400313.dbt_northwind_cleber_marts
 
 seeds:
   dbt_northwind:
