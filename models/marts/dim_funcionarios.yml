@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: dim_funcionarios
+    columns:
+      - name: sk_funcionario
+        description: Essa é a SK da dim funcionários 
+        tests:
+          - unique
+          - not_null   

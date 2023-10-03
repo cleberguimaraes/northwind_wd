@@ -50,6 +50,7 @@ models:
       +schema: northwind-projeto-dw-400313.dbt_northwind_cleber_marts
 
 seeds:
-  dbt_northwind:
-    erp_northwind:
-      +schema: erp_northwind
+  erp_northwind:
+      +materialized: table
+      +schema: date
+  
