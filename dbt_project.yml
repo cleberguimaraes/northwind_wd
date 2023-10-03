@@ -41,6 +41,7 @@ models:
       +schema: marts
 
 seeds:
-  dbt_northwind:
-    erp_northwind:
-      +schema: erp_northwind
+  erp_northwind:
+      +materialized: table
+      +schema: date
+  
